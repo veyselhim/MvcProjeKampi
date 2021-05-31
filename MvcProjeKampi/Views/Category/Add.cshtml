@@ -1,0 +1,60 @@
+﻿@model EntityLayer.Concrete.Category
+
+@{
+    Layout = null;
+}
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<!DOCTYPE html>
+
+@using (Html.BeginForm("Add","Category",FormMethod.Post)) 
+{
+    <div class="form-group">
+
+        @Html.Label("Kategori Adı")
+        @Html.TextBoxFor(x=>x.CategoryName)
+        @Html.ValidationMessageFor(x=>x.CategoryName)
+        <br/>
+        <br/>
+        @Html.Label("Açıklamayı yazınız")
+        @Html.TextBoxFor(x=>x.CategoryDescription)
+        @Html.ValidationMessageFor(x=>x.CategoryDescription)
+        <br/><br/>
+        <button>Kaydet</button>
+    </div>
+}
+
+
+@*<div class="container p-3" style="background-color: lightgrey">
+    
+    <form class="row g-3 " method="post">
+
+        <div class="col-md-12">
+            <label for="inputKategori" class="form-label font-weight-bolder">Kategori Adı</label>
+            <input type="text" class="form-control" id="CategoryName" name="CategoryName">
+        </div>
+        
+        <div class="col-md-6">
+            <label for="inputDesc" class="form-label font-weight-bolder">Kategori Açıklaması</label>
+            <input type="text" class="form-control" name="CategoryDescription" >
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputDurum" class="form-label font-weight-bolder">Durumu</label>
+            <input type="number" class="form-control" name="CategoryStatus">
+        </div>
+        
+        <br />
+        
+        <div class="col-md-12 p-3">
+            <center>           
+                <button class="btn btn-primary w-25 ">Ekle</button>
+            </center>  
+
+        </div>
+
+    </form>
+    
+ 
+</div>*@
+
+

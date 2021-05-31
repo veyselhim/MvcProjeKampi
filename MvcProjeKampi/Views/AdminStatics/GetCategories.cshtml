@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "GetCategories";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+
+
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+<div>
+    <div class="m-3 float-left mt-5" style="background-color: darkorange; width: 260px; height: 130px;">
+        
+
+        <div class="h1 mt-2 " style="margin-left: 110px; font-family: sans-serif; color: white">
+            @ViewBag.categoryCount
+        </div>
+        
+        <label class="h5 ml-5 mt-2" style="font-family: monospace;color: white">Toplam Kategori </label>
+
+
+    </div>
+    
+    <div class="m-3 float-left mt-5"  style="background-color: deeppink; width: 260px; height: 130px;">
+        
+
+        <div class="h1 mt-2" style="margin-left: 110px; font-family: sans-serif; color: white">
+            @ViewBag.softwareCount
+        </div>
+        
+        <label class="h5 ml-5 mt-2" style="font-family: monospace;color: white">Toplam Yazılım Kategori </label>
+
+
+    </div>
+
+    <div class="m-3 float-left mt-5" style="background-color: palegreen; width: 260px; height: 130px;">
+        
+        
+        <div class="h1 mt-2" style="margin-left: 110px; font-family: sans-serif; color: white">
+            @ViewBag.categoryStatusDiffrent
+        </div>
+        
+        <label class="h5 ml-5 mt-2" style="font-family: monospace;color: white">Kategori Durum Farkı </label>
+
+
+    </div>
+
+    <div class="m-3 float-left mt-5" style="background-color: palevioletred; width: 260px; height: 130px;">
+        
+        
+        <div class="h1 mt-2" style="margin-left: 65px; font-family: sans-serif; color: white">
+            @ViewBag.mostTitlesCategoryName
+        </div>
+        
+        <label class="h5 ml-5 mt-2" style="font-family: monospace;color: white">En Çok Başlığa Sahip Kategori </label>
+
+    </div>
+
+    <div class="m-3 float-left mt-5" style="background-color: gold; width: 260px; height: 130px;">
+
+        <div class="h1 mt-2" style="margin-left: 110px; font-family: sans-serif; color: white">
+            @ViewBag.writerLetter
+        </div>
+        
+        <label class="h5 ml-4 mt-2" style="font-family: monospace;color: white">İsminde A Harfi Geçen Yazar Sayısı </label>
+
+    </div>
+
+</div>
+
